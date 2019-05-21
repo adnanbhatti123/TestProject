@@ -51,3 +51,12 @@ enum sectionHeaderTitle:String {
     openingHoursSectionTitle = "BUSINESS HOURS"
     
 }
+
+
+enum contactInfo:String {
+    case email = "email",
+    website = "website",
+    phoneNumber = "phoneNumber",
+    tollFree = "tollFree",
+    faxNumber = "faxNumber"
+}

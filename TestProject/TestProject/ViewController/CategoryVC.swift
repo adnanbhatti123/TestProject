@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 import MBProgressHUD
 
 class CategoryVC: UIViewController {
@@ -16,6 +17,7 @@ class CategoryVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         getCategoryViewModel()
+       
     }
     
     func getCategoryViewModel(){
@@ -26,6 +28,8 @@ class CategoryVC: UIViewController {
         }
         
     }
+    
+    
     
     func moveToResourcesList(resourceVM:ResourceViewModel){
         let resourceListVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.kResourcesListVC) as! ResourceListVC

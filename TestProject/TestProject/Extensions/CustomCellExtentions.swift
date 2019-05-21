@@ -11,7 +11,7 @@ import UIKit
 extension CustomCell {
     
   func showHideButtons(title:String){
-        if (title == "email") {
+        if (title == contactInfo.email.rawValue) {
             self.emailButton.isHidden = false
             self.messageBtn.isHidden = true
             self.phoneBtn.isHidden = true
@@ -19,7 +19,7 @@ extension CustomCell {
             self.websiteButton.isHidden = true
         }
         
-       else if (title == "website") {
+       else if (title == contactInfo.website.rawValue) {
             self.emailButton.isHidden = true
             self.messageBtn.isHidden = true
             self.phoneBtn.isHidden = true
@@ -27,7 +27,7 @@ extension CustomCell {
             self.websiteButton.isHidden = false
         }
         
-     else if (title == "phoneNumber" ||  title == "tollFree") {
+     else if (title == contactInfo.phoneNumber.rawValue ||  title == contactInfo.tollFree.rawValue) {
             self.emailButton.isHidden = true
             self.messageBtn.isHidden = false
             self.phoneBtn.isHidden = false
@@ -35,7 +35,7 @@ extension CustomCell {
             self.websiteButton.isHidden = true
         }
         
-     else if (title == "faxNumber" ) {
+     else if (title == contactInfo.faxNumber.rawValue) {
             self.emailButton.isHidden = true
             self.messageBtn.isHidden = true
             self.phoneBtn.isHidden = true

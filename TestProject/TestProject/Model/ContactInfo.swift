@@ -46,8 +46,6 @@ class ContactInfo: NSObject {
                 contactInfoList.append(faxNumber[0])
                 contactTitleList.append("faxNumber")
             }
-            
-   
         }
         
         if let tollFree =  contactObject["tollFree"] as? [String]{

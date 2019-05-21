@@ -49,7 +49,7 @@ extension ResourceDetailVC:UITableViewDelegate{
             sectionName = NSLocalizedString(sectionHeaderTitle.addressSectionTitle.rawValue, comment: "");
         }
         
-        if (sectionIndex.socialMediaCell.rawValue == section) {
+    if (sectionIndex.socialMediaCell.rawValue == section) {
             sectionName = NSLocalizedString(sectionHeaderTitle.socialMediaSectionTitle.rawValue, comment: "")
         }
         

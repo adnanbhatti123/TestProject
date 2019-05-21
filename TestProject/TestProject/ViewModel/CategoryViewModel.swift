@@ -23,9 +23,6 @@ class CategoryViewModel: NSObject {
         self.catObject = catObject
     }
     
-    
-    
-    
     func fetchCategoryList(success:@escaping SuccessBlock)  {
         self.dataService.fetchData(with:ApiNames.categories.rawValue) { (response, error) in
             if(response != nil && response!.count > 0)
